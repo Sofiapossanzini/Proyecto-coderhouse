@@ -17,45 +17,7 @@ body{
 
     } 
 
-
-  header nav ul .cinco{ 
-        background-color: black;
-        color: beige ;
-        font-size: 20px;
-        position: sticky;
-        top: 0px;
-        } 
-
-       /* .clase-padre{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap  ;
-            justify-content: center;
-           
-           
-            text-align: center;
-            font-size: 50px;
-            color: beige;
-            width: 100px;
-            height: 400px;
-            background-color: black;
-            border: 1px solid floralwhite;
-        
-            
-          
-        
-            } */
-         
-    ul li{ 
-        background-color: black;
-        display: inline-block;
-        padding-left: 50px; 
-        margin: 20px 0px;
-        border: 1px;
-        
-
-        }
-        .imagenes-poss-fiat-jeep{ 
+  .imagenes-poss-fiat-jeep{ 
            
             width: 1200px ;
             height: 800;
@@ -111,7 +73,7 @@ h2{
     display: block;
 
     }
-
+    
 .texto {   
     font-size: 12px;
     height: 300px;
@@ -126,54 +88,55 @@ h2{
 
         }
 
-        .contenedor-grid{
+        .grid-servicios{
             display: grid;
-            height: 200px;
+            
             
             grid-template-columns: 80% 20%;
             grid-template-rows: 50% 50$ ;
+
+            height: 300px;
+
         }
         .hijo-uno{
-            font-weight: bold
+            background-color: floralwhite;
         }
         .hijo-dos{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+           background-color: floralwhite;
 
         }
         .hijo-tres{
+            background-color: floralwhite;
             
 
         }
         .hijo-cuatro{
-            
+            background-color:floralwhite;
 
         }
 
-        .classe-p{
-            height: 50px;
-        }
        
-        /*celular*/
-        .img-tres , .img-cuatro {
-            display: none;
-        }
-         main #galeria {
+       
+        main .galeria{
             height: 50vh ;
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: repeat (3, 10%);
+            grid-template-rows:repeat(3, 30%);
             gap: 2rem;
             margin: 3rem 2rem 3rem 2rem;
 
         }
-        main .galeria {
+        .img-tres , .img-cuatro {
+            display: none;
+        }
+        main div img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+        }
 
-        } 
+       
+ 
              /*mq de tablet*/
         @media screen and (min-width: 600px) {
             #galeria {
@@ -188,11 +151,11 @@ h2{
         
          /*mq de desktop*/
              @media screen and (min-width: 1024px) {
-               #galeria  .img-tres, .img-cuatro {
+               .galeria  .img-tres, .img-cuatro {
                 display: block;
 
                }
-               #galeria {
+               .galeria {
                 grid-template-columns: (3, 1fr);
                 grid-template-rows: 40% 30% 30%;
                    
@@ -200,18 +163,60 @@ h2{
         main .img-uno .img-cinco {
             grid-column: span 3;
         } 
+
+        footer{
+            margin-top: 2rem;
+            color: beige;
+            text-align: justify ;
+        }
                 
             /*          {}        */   
 
         }
 
         div .carousel-inner {
-            height: 500px;
-            width: 500px;
+            height: 300px;
+            width: 300px;
         }
         div .carousel-inner img {
             width: 100%;
             height: 100%;
             object-fit: cover;
 
+        }
+
+        .bg-floralwhite{
+
+        }
+        .menu-color{
+            background-color:coral;
+          
+            
+        }
+        .menu ul li a:hover {
+            background-color: coral;
+        }
+        .menu ul li a:active {
+            background-color: rgb(171, 57, 15);
+        }
+        .padre-flex{
+                background-color: rgb(214, 108, 69);
+                height: 500px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap:  wrap;
+                justify-content: space-around;
+                align-content: center;
+        }
+        .padre-flex article{
+            height: 150px;
+            width: 150px;
+            background-color: rgb(250, 127, 82);
+            border: 1px solid white;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            
         }
