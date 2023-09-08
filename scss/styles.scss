@@ -1,0 +1,38 @@
+@import "utils/variables" ;
+@import "utils/extend";
+@import "utils/mixin" ;
+@import "layout/header"
+
+body{
+    color: $primary-color;
+
+}
+
+.padre-flex-uno{ 
+    @include padre-flex-uno 
+
+    article {
+        @include padre-flex-unoo
+    
+    }
+}
+
+
+.padre-flex {
+
+    @include padre-flex
+    article {
+        @include .padre-flexx
+     }
+ }
+
+ .galeria img { 
+    @extend %estilos ; 
+
+ }
+
+ h1 {
+     @extend %textos ; 
+     }
+
+

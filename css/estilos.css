@@ -1,50 +1,202 @@
 /* reset de html */
-*html{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box
 
 
-     }
+ }
 html{
     font-size: 62,5%;
 
 
     }
+
+
+/* body*/
 body{ 
     background-color: floralwhite;
 
 
     } 
 
-  .imagenes-poss-fiat-jeep{ 
-           
-            width: 1200px ;
-            height: 800;
-            }
+/* header */
+.menu-color{
+    background-color:rgb(236, 233, 233);
+  
+    
+}
 
-    .home-fondo-blanco { 
-        background-color: white;
-        width: 1200px ;
-        height: 1000;
+.menu ul li a:hover {
+    background-color: grey;
+}
+.menu ul li a:active {
+    background-color: rgb(108, 107, 107);
+}
+
+section ul{
+    list-style-type: none;
+}
+
+
+
+
+/* main index  */
+
+    .padre-flex-uno{
+        background-color: rgb(223, 219, 219);
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap:  wrap;
+        justify-content: space-around;
+        align-content: center;
+
+    }
+    .padre-flex-uno article {
+                font-size: 30px;
+                font-size: bold;
+                text-align: center;
+
+
+    }
+  
+    .padre-flex{
+                background-color: rgb(114, 17, 17);
+                height: 500px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap:  wrap;
+                justify-content: space-around;
+                align-content: center;
         }
-    .siete {
-            font-weight: bold;
-            color:red;
-            text-decoration: underline;
-             font-size: 15px;
-            text-align: center;
-            position:relative;
-            bottom:55px;
-         }
+    .padre-flex article{
+                    height: 230px;
+                    width: 230px;
+                    background-color: black;
+                    border: 2px solid red;
+                    padding: 20px;
 
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 15px;
+                    color: white
+                    
+                }
+    .padre-flex-dos{
+        background-color: rgb(223, 219, 219);
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap:  wrap;
+        justify-content: space-around;
+        align-content: center;
+
+    }
+
+    .padre-flex-dos article{
+        height: 230px;
+        width: 230px;
+        background-color: black;
+        border: 2px solid red;
+        padding: 20px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        color: white
+        
+
+
+    }
+
+
+
+    /* MAIN GALERIA */
+    
+    
+    .galeria img{
+        width: 1000px;
+        height: 1000px;
+        margin: 20px 10px;
+        padding: 20px;
+        border: dotted 2px red;
+        display: block; }
+
+main .galeria{
+        height: 50vh ;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:repeat(3, 30%);
+        gap: 2rem;
+        margin: 3rem 2rem 3rem 2rem;
+
+    }
+    .img-tres , .img-cuatro {
+        display: none;
+    }
+    main div img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+   
+
+         /*mq de tablet*/
+    @media screen and (min-width: 600px) {
+        #galeria {
+            grid-template-columns: (2, 1fr);
+            grid-template-rows: (2, 50%);
+           
+        
+    }
+    main .img-uno{
+     grid-column: span 2;
+    }
+    
+     /*mq de desktop*/
+         @media screen and (min-width: 1024px) {
+           .galeria  .img-tres, .img-cuatro {
+            display: block;
+
+           }
+           .galeria {
+            grid-template-columns: (3, 1fr);
+            grid-template-rows: 40% 30% 30%;
+               
+                    }
+    main .img-uno .img-cinco {
+        grid-column: span 3;
+    } 
+
+        
+
+
+
+
+    /*MAIN CONTACTO*/
+
+    
 h1{
     color: red;
     font-family: Georgia, 'Times New Roman', Times, serif;
     }
+h2{
+    text-align: center;
+    font-family:  Georgia, 'Times New Roman', Times, serif;
+        }
+    
+
+
+
 
 #tres{
-    text-align: center;
+    text-align: cente5r;
     color: grey;
     font-family: Georgia, 'Times New Roman', Times, serif;
      }
@@ -54,34 +206,21 @@ h1{
         }
 
    
-h2{
-    text-align: left;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
-    }
 
-#imagenservicios img{ 
-      width: 1250px;
-      height: 500px;
+#imagen-servicios img{ 
+      width: 300px;
+      height: 300px;
         }
 
-.imagenes-galeria img{
-    width: 600px;
-    height: 450px;
-    margin: 20px 10px;
-    padding: 20px;
-    border: dotted 2px red;
-    display: block;
 
-    }
+    
     
 .texto {   
     font-size: 12px;
     height: 300px;
     overflow: auto;
     }
- .toda-la-galeria{ 
-    background-color: grey;  
-        }
+ 
 
 #bordes-form{ 
     padding: 200px;
@@ -117,52 +256,7 @@ h2{
 
        
        
-        main .galeria{
-            height: 50vh ;
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows:repeat(3, 30%);
-            gap: 2rem;
-            margin: 3rem 2rem 3rem 2rem;
-
-        }
-        .img-tres , .img-cuatro {
-            display: none;
-        }
-        main div img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-       
- 
-             /*mq de tablet*/
-        @media screen and (min-width: 600px) {
-            #galeria {
-                grid-template-columns: (2, 1fr);
-                grid-template-rows: (2, 50%);
-               
-            
-        }
-        main .img-uno{
-         grid-column: span 2;
-        }
         
-         /*mq de desktop*/
-             @media screen and (min-width: 1024px) {
-               .galeria  .img-tres, .img-cuatro {
-                display: block;
-
-               }
-               .galeria {
-                grid-template-columns: (3, 1fr);
-                grid-template-rows: 40% 30% 30%;
-                   
-                        }
-        main .img-uno .img-cinco {
-            grid-column: span 3;
-        } 
 
         footer{
             margin-top: 2rem;
@@ -170,9 +264,8 @@ h2{
             text-align: justify ;
         }
                 
-            /*          {}        */   
-
-        }
+     
+        
 
         div .carousel-inner {
             height: 300px;
@@ -185,38 +278,8 @@ h2{
 
         }
 
-        .bg-floralwhite{
+     
+        
+      
 
-        }
-        .menu-color{
-            background-color:coral;
-          
-            
-        }
-        .menu ul li a:hover {
-            background-color: coral;
-        }
-        .menu ul li a:active {
-            background-color: rgb(171, 57, 15);
-        }
-        .padre-flex{
-                background-color: rgb(214, 108, 69);
-                height: 500px;
-                display: flex;
-                flex-direction: row;
-                flex-wrap:  wrap;
-                justify-content: space-around;
-                align-content: center;
-        }
-        .padre-flex article{
-            height: 150px;
-            width: 150px;
-            background-color: rgb(250, 127, 82);
-            border: 1px solid white;
-
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            
-        }
+        

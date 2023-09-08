@@ -1,0 +1,30 @@
+nav{
+    .menu-color{
+        color: $tercer-color; 
+       }
+
+} 
+
+nav {
+    div {
+     .menu {
+        ul{
+            list-style-type: none;
+            li{
+                a:active{
+                    background-color: $tercer-color;
+                    
+                    & hover {
+                        background-color: $quinto-color;
+                        
+                       }
+                    
+                }
+            }
+        }
+     }
+    }
+     
+   }
+
+

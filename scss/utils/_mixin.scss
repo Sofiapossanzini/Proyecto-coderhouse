@@ -1,0 +1,44 @@
+
+@mixin padre-flex-uno { 
+    background-color: $sexto-color;
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap:  wrap;
+        justify-content: space-around;
+        align-content: center;
+}
+
+@mixin padre-flex-unoo {
+    font-size: 30px;
+    font-size: bold;
+    text-align: center;
+
+
+}
+
+@mixin padre-flex{
+    background-color: $sept-color;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:  wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+@mixin padre-flexx {
+    height: 230px;
+    width: 230px;
+    background-color: $nov-color;
+    border: 2px solid $secondary-color;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: $decimo-color;
+    
+}
